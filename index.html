@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fusion Peru China: platos para exposición con páginas QR estáticas." />
+  <title>Fusión Perú China | Expo Gastronómica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-left"></div>
+  <div class="ambient ambient-right"></div>
+
+  <main id="app">
+    <section class="hero">
+      <div class="hero__copy">
+        <p class="eyebrow">Expo gastronómica · Fusión cultural</p>
+        <h1>Perú y China en un solo sabor</h1>
+        <p class="lead">
+          Una experiencia estática pensada para tablet y QR: cada plato tiene su propia vista con nombre,
+          descripción breve e ingredientes principales.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#menu">Ver platos</a>
+          <a class="btn btn--ghost" href="#arroz-chaufa">Abrir un plato</a>
+          <a class="btn btn--ghost" href="#qrs">Ver QR</a>
+        </div>
+      </div>
+
+      <div class="hero__panel">
+        <div class="panel-card panel-card--large">
+          <span class="panel-card__label">Mesa de exhibición</span>
+          <h2>QR listo para mostrar</h2>
+          <p>
+            En la mesa solo se necesita el QR y el nombre del plato. La tablet puede abrir la misma página
+            para presentar el detalle al público.
+          </p>
+          <div class="panel-card__stats">
+            <div>
+              <strong>6</strong>
+              <span>platos</span>
+            </div>
+            <div>
+              <strong>1</strong>
+              <span>sitio estático</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="signature">
+      <div>
+        <p class="eyebrow">Paleta sugerida</p>
+        <h2>Rojo, negro y dorado</h2>
+      </div>
+      <p>
+        El rojo aporta energía y presencia, el negro da contraste elegante y el dorado refuerza la idea de
+        celebración y prestigio culinario. Se añadió un brillo sutil para que la página se vea viva sin perder
+        legibilidad.
+      </p>
+    </section>
+
+    <section id="qrs" class="qr-section">
+      <div class="section-heading">
+        <p class="eyebrow">Códigos QR</p>
+        <h2>Un QR por plato</h2>
+      </div>
+      <p class="section-intro">
+        Cada tarjeta usa la URL actual del sitio con el ancla del plato. Así puedes imprimir el QR o
+        mostrarlo en la mesa y dirigir al público directamente al detalle correcto.
+      </p>
+      <div class="qr-grid" id="qr-grid"></div>
+    </section>
+
+    <section id="menu" class="menu-grid">
+      <article class="menu-card">
+        <span class="menu-card__number">01</span>
+        <h3>Arroz Chaufa</h3>
+        <p>Arroz salteado al wok con pollo, huevo, cebolla china y sillao, un clásico de la cocina chifa.</p>
+        <div class="menu-card__footer">
+          <a href="#arroz-chaufa">Ver detalle</a>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <span class="menu-card__number">02</span>
+        <h3>Tallarín Saltado</h3>
+        <p>Tallarines salteados con carne, verduras y salsa oriental con un toque peruano muy sabroso.</p>
+        <div class="menu-card__footer">
+          <a href="#tallarin-saltado">Ver detalle</a>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <span class="menu-card__number">03</span>
+        <h3>Lomo Saltado</h3>
+        <p>Lomo de res con cebolla, tomate, ají y papas fritas, emblema de la mezcla criolla y china.</p>
+        <div class="menu-card__footer">
+          <a href="#lomo-saltado">Ver detalle</a>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <span class="menu-card__number">04</span>
+        <h3>Aeropuerto</h3>
+        <p>Combinación generosa de arroz chaufa, tallarín y carnes, ideal para porciones abundantes.</p>
+        <div class="menu-card__footer">
+          <a href="#aeropuerto">Ver detalle</a>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <span class="menu-card__number">05</span>
+        <h3>Wantan</h3>
+        <p>Masitas rellenas fritas o en sopa, con carne sazonada y una textura crujiente o suave.</p>
+        <div class="menu-card__footer">
+          <a href="#wantan">Ver detalle</a>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <span class="menu-card__number">06</span>
+        <h3>Kamlu Wantan</h3>
+        <p>Wantan crocante cubierto con salsa agridulce, verduras y frutas en un plato vistoso y festivo.</p>
+        <div class="menu-card__footer">
+          <a href="#kamlu-wantan">Ver detalle</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="tablet-preview">
+      <div class="tablet-preview__copy">
+        <p class="eyebrow">Vista para expositor</p>
+        <h2>La misma página en tablet o pantalla</h2>
+        <p>
+          Si el código QR abre esta URL con un identificador del plato, la vista se enfoca solo en ese contenido.
+          Así el expositor puede cambiar de plato sin salir del sitio.
+        </p>
+      </div>
+      <div class="tablet-screen">
+        <div class="tablet-screen__top"></div>
+        <div class="dish-detail" id="dish-detail">
+          <p class="dish-detail__kicker">Plato destacado</p>
+          <h2 id="dish-title">Arroz Chaufa</h2>
+          <p id="dish-description">
+            Arroz salteado al wok con pollo, huevo, cebolla china y sillao, un clásico de la cocina chifa.
+          </p>
+          <ul id="dish-ingredients" class="ingredients"></ul>
+          <div class="qr-hint">
+            <span>QR</span>
+            <div>
+              <strong>Acceso rápido</strong>
+              <p>La mesa puede mostrar solo el nombre y el enlace codificado en el QR.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-stack" aria-label="Platos">
+      <article class="detail-card dish-section" id="arroz-chaufa" data-title="Arroz Chaufa" data-description="Arroz salteado al wok con pollo, huevo, cebolla china y sillao, un clásico de la cocina chifa." data-ingredients='["Arroz cocido","Pollo","Huevo","Cebolla china","Sillao","Aceite de ajonjolí"]'>
+        <h2>Arroz Chaufa</h2>
+        <p>Arroz salteado al wok con pollo, huevo, cebolla china y sillao, un clásico de la cocina chifa.</p>
+      </article>
+
+      <article class="detail-card dish-section" id="tallarin-saltado" data-title="Tallarín Saltado" data-description="Tallarines salteados con carne, verduras y salsa oriental con un toque peruano muy sabroso." data-ingredients='["Tallarines","Carne de res","Cebolla","Tomate","Sillao","Ají amarillo"]'>
+        <h2>Tallarín Saltado</h2>
+        <p>Tallarines salteados con carne, verduras y salsa oriental con un toque peruano muy sabroso.</p>
+      </article>
+
+      <article class="detail-card dish-section" id="lomo-saltado" data-title="Lomo Saltado" data-description="Lomo de res con cebolla, tomate, ají y papas fritas, emblema de la mezcla criolla y china." data-ingredients='["Lomo de res","Cebolla","Tomate","Ají amarillo","Papas fritas","Sillao"]'>
+        <h2>Lomo Saltado</h2>
+        <p>Lomo de res con cebolla, tomate, ají y papas fritas, emblema de la mezcla criolla y china.</p>
+      </article>
+
+      <article class="detail-card dish-section" id="aeropuerto" data-title="Aeropuerto" data-description="Combinación generosa de arroz chaufa, tallarín y carnes, ideal para porciones abundantes." data-ingredients='["Arroz chaufa","Tallarín salteado","Pollo","Carne","Huevo","Verduras"]'>
+        <h2>Aeropuerto</h2>
+        <p>Combinación generosa de arroz chaufa, tallarín y carnes, ideal para porciones abundantes.</p>
+      </article>
+
+      <article class="detail-card dish-section" id="wantan" data-title="Wantan" data-description="Masitas rellenas fritas o en sopa, con carne sazonada y una textura crujiente o suave." data-ingredients='["Masa wantan","Carne molida","Cebolla china","Ajo","Sillao","Caldo o aceite para freír"]'>
+        <h2>Wantan</h2>
+        <p>Masitas rellenas fritas o en sopa, con carne sazonada y una textura crujiente o suave.</p>
+      </article>
+
+      <article class="detail-card dish-section" id="kamlu-wantan" data-title="Kamlu Wantan" data-description="Wantan crocante cubierto con salsa agridulce, verduras y frutas en un plato vistoso y festivo." data-ingredients='["Wantan frito","Piña","Zanahoria","Pimiento","Salsa agridulce","Verduras mixtas"]'>
+        <h2>Kamlu Wantan</h2>
+        <p>Wantan crocante cubierto con salsa agridulce, verduras y frutas en un plato vistoso y festivo.</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
