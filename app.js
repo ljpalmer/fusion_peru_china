@@ -35,8 +35,21 @@ const dishes = {
     ingredients: ["Wantan frito", "Piña", "Zanahoria", "Pimiento", "Salsa agridulce", "Verduras mixtas"],
     image: "./assets/dishes/kamlu-wantan.jpg",
   },
+  "pie-de-zapallo-de-carga": {
+    title: "Pie de Zapallo de Carga",
+    description: "Pie casero de zapallo de carga con relleno cremoso y masa dorada, ideal como postre de vitrina.",
+    ingredients: ["Zapallo de carga", "Harina", "Mantequilla", "Azúcar", "Huevos", "Canela"],
+    image: "./assets/dishes/pie-de-zapallo-de-carga.jpg",
+  },
+  "alfajores-de-zapallo": {
+    title: "Alfajores de Zapallo",
+    description: "Alfajores suaves de zapallo con relleno dulce y un acabado delicado de azúcar impalpable.",
+    ingredients: ["Zapallo", "Harina", "Maicena", "Dulce de leche", "Azúcar impalpable", "Canela"],
+    image: "./assets/dishes/alfajores-de-zapallo.jpg",
+  },
 };
 
+const siteBaseUrl = "https://fusion-peru-china.vercel.app/";
 const titleEl = document.getElementById("dish-title");
 const imageEl = document.getElementById("dish-image");
 const descriptionEl = document.getElementById("dish-description");
@@ -54,9 +67,8 @@ function renderDish(slug) {
 }
 
 function buildDishUrl(slug) {
-  const url = new URL(window.location.href);
+  const url = new URL(siteBaseUrl);
   url.hash = slug;
-  url.search = "";
   return url.href;
 }
 
