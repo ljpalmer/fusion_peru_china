@@ -3,48 +3,56 @@ const dishes = {
     title: "Arroz Chaufa",
     description: "Arroz salteado al wok con pollo, huevo, cebolla china y sillao, un clásico de la cocina chifa.",
     ingredients: ["Arroz cocido", "Pollo", "Huevo", "Cebolla china", "Sillao", "Aceite de ajonjolí"],
+    flags: ["🇵🇪", "🇨🇳"],
     image: "./assets/dishes/arroz-chaufa.jpg",
   },
   "tallarin-saltado": {
     title: "Tallarín Saltado",
     description: "Tallarines salteados con carne, verduras y salsa oriental con un toque peruano muy sabroso.",
     ingredients: ["Tallarines", "Carne de res", "Cebolla", "Tomate", "Sillao", "Ají amarillo"],
+    flags: ["🇵🇪", "🇨🇳"],
     image: "./assets/dishes/tallarin-saltado.jpg",
   },
   "lomo-saltado": {
     title: "Lomo Saltado",
     description: "Lomo de res con cebolla, tomate, ají y papas fritas, emblema de la mezcla criolla y china.",
     ingredients: ["Lomo de res", "Cebolla", "Tomate", "Ají amarillo", "Papas fritas", "Sillao"],
+    flags: ["🇵🇪", "🇨🇳"],
     image: "./assets/dishes/lomo-saltado.jpg",
   },
   aeropuerto: {
     title: "Aeropuerto",
     description: "Combinación generosa de arroz chaufa, tallarín y carnes, ideal para porciones abundantes.",
     ingredients: ["Arroz chaufa", "Tallarín salteado", "Pollo", "Carne", "Huevo", "Verduras"],
+    flags: ["🇵🇪", "🇨🇳"],
     image: "./assets/dishes/aeropuerto.jpg",
   },
   wantan: {
     title: "Wantan",
     description: "Masitas rellenas fritas o en sopa, con carne sazonada y una textura crujiente o suave.",
     ingredients: ["Masa wantan", "Carne molida", "Cebolla china", "Ajo", "Sillao", "Caldo o aceite para freír"],
+    flags: ["🇵🇪", "🇨🇳"],
     image: "./assets/dishes/wantan.jpg",
   },
   "kamlu-wantan": {
     title: "Kamlu Wantan",
     description: "Wantan crocante cubierto con salsa agridulce, verduras y frutas en un plato vistoso y festivo.",
     ingredients: ["Wantan frito", "Piña", "Zanahoria", "Pimiento", "Salsa agridulce", "Verduras mixtas"],
+    flags: ["🇵🇪", "🇨🇳"],
     image: "./assets/dishes/kamlu-wantan.jpg",
   },
   "pie-de-zapallo-de-carga": {
     title: "Pie de Zapallo de Carga",
     description: "Pie casero de zapallo de carga con relleno cremoso y masa dorada, ideal como postre de vitrina.",
     ingredients: ["Zapallo de carga", "Harina", "Mantequilla", "Azúcar", "Huevos", "Canela"],
+    flags: ["🇵🇪"],
     image: "./assets/dishes/pie-de-zapallo-de-carga.jpg",
   },
   "alfajores-de-zapallo": {
     title: "Alfajores de Zapallo",
     description: "Alfajores suaves de zapallo con relleno dulce y un acabado delicado de azúcar impalpable.",
     ingredients: ["Zapallo", "Harina", "Maicena", "Dulce de leche", "Azúcar impalpable", "Canela"],
+    flags: ["🇵🇪"],
     image: "./assets/dishes/alfajores-de-zapallo.jpg",
   },
 };
@@ -52,6 +60,7 @@ const dishes = {
 const siteBaseUrl = "https://fusion-peru-china.vercel.app/";
 const titleEl = document.getElementById("dish-title");
 const imageEl = document.getElementById("dish-image");
+const flagsEl = document.getElementById("dish-flags");
 const descriptionEl = document.getElementById("dish-description");
 const ingredientsEl = document.getElementById("dish-ingredients");
 const qrGridEl = document.getElementById("qr-grid");
@@ -59,6 +68,8 @@ const qrGridEl = document.getElementById("qr-grid");
 function renderDish(slug) {
   const dish = dishes[slug] || dishes["arroz-chaufa"];
   titleEl.textContent = dish.title;
+  flagsEl.innerHTML = dish.flags.map((flag) => `<span class="dish-flag" aria-hidden="true">${flag}</span>`).join("");
+  flagsEl.hidden = !dish.flags || dish.flags.length === 0;
   imageEl.src = dish.image;
   imageEl.alt = dish.title;
   descriptionEl.textContent = dish.description;

@@ -378,6 +378,26 @@ body {
   font-size: 1.55rem;
 }
 
+.dish-flags {
+  display: inline-flex;
+  gap: 0.3rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: -0.15rem 0 0.25rem;
+}
+
+.dish-flag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  line-height: 1;
+  padding: 0.18rem 0.34rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
 .menu-card__footer {
   margin-top: 1.1rem;
 }
