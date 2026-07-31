@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Fusion Peru China: platos para exposición con páginas QR estáticas." />
+  <meta name="description" content="Exposición digital sobre la fusión culinaria entre Perú y China." />
   <title>Fusión Perú China | Expo Gastronómica</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,286 +17,271 @@
   <main id="app">
     <section class="hero">
       <div class="hero__copy">
-        <p class="eyebrow">Expo gastronómica · Fusión cultural</p>
+        <p class="eyebrow">Expo gastronómica · Cultura viva</p>
         <h1>Perú y China en un solo sabor</h1>
         <p class="lead">
-          Una experiencia estática pensada para tablet y QR: cada plato tiene su propia vista con nombre,
-          descripción breve e ingredientes principales.
+          Una exposición digital sobre el chifa: el encuentro entre técnicas chinas y productos peruanos que dio
+          lugar a una cocina nueva, mestiza y profundamente local.
         </p>
         <div class="hero__actions">
-          <a class="btn btn--primary" href="#menu">Ver platos</a>
-          <a class="btn btn--ghost" href="#arroz-chaufa">Abrir un plato</a>
-          <a class="btn btn--ghost" href="#qrs">Ver QR</a>
+          <a class="btn btn--primary" href="#historia">Comenzar recorrido</a>
+          <a class="btn btn--ghost" href="#platos">Ver platos</a>
         </div>
       </div>
 
-      <div class="hero__panel">
-        <div class="panel-card panel-card--large">
-          <span class="panel-card__label">Mesa de exhibición</span>
-          <h2>QR listo para mostrar</h2>
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__art hero__art--main">
+          <img src="./assets/dishes/lomo-saltado.jpg" alt="">
+        </div>
+        <div class="hero__art hero__art--top">
+          <img src="./assets/dishes/arroz-chaufa.jpg" alt="">
+        </div>
+        <div class="hero__art hero__art--bottom">
+          <img src="./assets/dishes/alfajores-de-zapallo.jpg" alt="">
+        </div>
+        <div class="hero__seal">
+          <span>Chifa</span>
+          <small>Encuentro de mesa, oficio y memoria</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="historia">
+      <div class="section-heading">
+        <p class="eyebrow">Inicio del recorrido</p>
+        <h2>¿Cómo nació esta fusión?</h2>
+      </div>
+      <div class="story-grid">
+        <article class="story-card">
+          <span class="story-card__number">01</span>
+          <h3>Llegada</h3>
           <p>
-            En la mesa solo se necesita el QR y el nombre del plato. La tablet puede abrir la misma página
-            para presentar el detalle al público.
+            La inmigración china trajo nuevas técnicas, condimentos y costumbres de cocina que pronto encontraron
+            espacio en mercados, fondas y casas peruanas.
           </p>
-          <div class="panel-card__stats">
-            <div>
-              <strong>8</strong>
-              <span>platos</span>
-            </div>
-            <div>
-              <strong>1</strong>
-              <span>sitio estático</span>
-            </div>
+        </article>
+        <article class="story-card">
+          <span class="story-card__number">02</span>
+          <h3>Encuentro</h3>
+          <p>
+            El wok se encontró con el ají amarillo, la papa, el zapallo y la cebolla morada. El resultado no fue
+            una copia, sino una cocina con voz propia.
+          </p>
+        </article>
+        <article class="story-card">
+          <span class="story-card__number">03</span>
+          <h3>Identidad</h3>
+          <p>
+            Así nació el chifa: un lenguaje culinario compartido que habla de adaptación, celebración y vida
+            cotidiana.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="bridge-section" id="ingredientes">
+      <div class="section-heading">
+        <p class="eyebrow">Cruce de sabores</p>
+        <h2>Ingredientes que viajaron y encontraron hogar</h2>
+      </div>
+      <div class="bridge-grid">
+        <article class="bridge-card">
+          <p class="bridge-card__label">Desde China</p>
+          <h3>Técnicas y gestos</h3>
+          <ul class="chip-list">
+            <li>Wok</li>
+            <li>Salteado rápido</li>
+            <li>Fuego alto</li>
+            <li>Sillao</li>
+            <li>Wantán</li>
+            <li>Fideos</li>
+          </ul>
+        </article>
+        <article class="bridge-card">
+          <p class="bridge-card__label">Desde el Perú</p>
+          <h3>Productos y carácter</h3>
+          <ul class="chip-list">
+            <li>Ají amarillo</li>
+            <li>Papa</li>
+            <li>Cebolla china</li>
+            <li>Zapallo</li>
+            <li>Tomate</li>
+            <li>Limón</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="platos" class="menu-section">
+      <div class="section-heading">
+        <p class="eyebrow">Sala de platos</p>
+        <h2>Piezas representativas</h2>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <img class="menu-card__image" src="./assets/dishes/arroz-chaufa.jpg" alt="Arroz Chaufa" loading="lazy" decoding="async">
+          <span class="menu-card__number">01</span>
+          <h3>Arroz Chaufa</h3>
+          <div class="dish-flags" aria-label="Influencia culinaria">
+            <span class="dish-flag" aria-hidden="true">🇵🇪</span>
+            <span class="dish-flag" aria-hidden="true">🇨🇳</span>
+          </div>
+          <p>Arroz frito al wok convertido en símbolo de abundancia y reunión familiar.</p>
+          <div class="menu-card__footer">
+            <a href="#arroz-chaufa">Ver historia</a>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img class="menu-card__image" src="./assets/dishes/tallarin-saltado.jpg" alt="Tallarín Saltado" loading="lazy" decoding="async">
+          <span class="menu-card__number">02</span>
+          <h3>Tallarín Saltado</h3>
+          <div class="dish-flags" aria-label="Influencia culinaria">
+            <span class="dish-flag" aria-hidden="true">🇵🇪</span>
+            <span class="dish-flag" aria-hidden="true">🇨🇳</span>
+          </div>
+          <p>Fideos salteados con carne y verduras, entre la rapidez china y el jugo peruano.</p>
+          <div class="menu-card__footer">
+            <a href="#tallarin-saltado">Ver historia</a>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img class="menu-card__image" src="./assets/dishes/lomo-saltado.jpg" alt="Lomo Saltado" loading="lazy" decoding="async">
+          <span class="menu-card__number">03</span>
+          <h3>Lomo Saltado</h3>
+          <div class="dish-flags" aria-label="Influencia culinaria">
+            <span class="dish-flag" aria-hidden="true">🇵🇪</span>
+            <span class="dish-flag" aria-hidden="true">🇨🇳</span>
+          </div>
+          <p>Carne, papa y tomate en una escena criolla marcada por la técnica del wok.</p>
+          <div class="menu-card__footer">
+            <a href="#lomo-saltado">Ver historia</a>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img class="menu-card__image" src="./assets/dishes/aeropuerto.jpg" alt="Aeropuerto" loading="lazy" decoding="async">
+          <span class="menu-card__number">04</span>
+          <h3>Aeropuerto</h3>
+          <div class="dish-flags" aria-label="Influencia culinaria">
+            <span class="dish-flag" aria-hidden="true">🇵🇪</span>
+            <span class="dish-flag" aria-hidden="true">🇨🇳</span>
+          </div>
+          <p>La abundancia convertida en plato: arroz, fideos y proteínas en una sola escala.</p>
+          <div class="menu-card__footer">
+            <a href="#aeropuerto">Ver historia</a>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img class="menu-card__image" src="./assets/dishes/wantan.jpg" alt="Wantan" loading="lazy" decoding="async">
+          <span class="menu-card__number">05</span>
+          <h3>Wantan</h3>
+          <div class="dish-flags" aria-label="Influencia culinaria">
+            <span class="dish-flag" aria-hidden="true">🇵🇪</span>
+            <span class="dish-flag" aria-hidden="true">🇨🇳</span>
+          </div>
+          <p>Masa rellena que viaja entre la sopa, la fritura y la mesa de celebración.</p>
+          <div class="menu-card__footer">
+            <a href="#wantan">Ver historia</a>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img class="menu-card__image" src="./assets/dishes/kamlu-wantan.jpg" alt="Kamlu Wantan" loading="lazy" decoding="async">
+          <span class="menu-card__number">06</span>
+          <h3>Kamlu Wantan</h3>
+          <div class="dish-flags" aria-label="Influencia culinaria">
+            <span class="dish-flag" aria-hidden="true">🇵🇪</span>
+            <span class="dish-flag" aria-hidden="true">🇨🇳</span>
+          </div>
+          <p>Crocante, agridulce y colorido: la versión peruana más festiva del wantán.</p>
+          <div class="menu-card__footer">
+            <a href="#kamlu-wantan">Ver historia</a>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img class="menu-card__image" src="./assets/dishes/pie-de-zapallo-de-carga.jpg" alt="Pie de Zapallo de Carga" loading="lazy" decoding="async">
+          <span class="menu-card__number">07</span>
+          <h3>Pie de Zapallo de Carga</h3>
+          <div class="dish-flags" aria-label="Influencia culinaria">
+            <span class="dish-flag" aria-hidden="true">🇵🇪</span>
+          </div>
+          <p>Un postre de horno con sabor a casa, vitrina y celebración familiar.</p>
+          <div class="menu-card__footer">
+            <a href="#pie-de-zapallo-de-carga">Ver historia</a>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img class="menu-card__image" src="./assets/dishes/alfajores-de-zapallo.jpg" alt="Alfajores de Zapallo" loading="lazy" decoding="async">
+          <span class="menu-card__number">08</span>
+          <h3>Alfajores de Zapallo</h3>
+          <div class="dish-flags" aria-label="Influencia culinaria">
+            <span class="dish-flag" aria-hidden="true">🇵🇪</span>
+          </div>
+          <p>Bocados suaves y aromáticos que cierran la exposición con dulzura.</p>
+          <div class="menu-card__footer">
+            <a href="#alfajores-de-zapallo">Ver historia</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="spotlight" id="ficha">
+      <div class="section-heading">
+        <p class="eyebrow">Ficha curatorial</p>
+        <h2>Historia de cada plato</h2>
+      </div>
+      <div class="spotlight__layout">
+        <div class="spotlight__media">
+          <img id="dish-image" class="spotlight__image" src="./assets/dishes/arroz-chaufa.jpg" alt="Arroz Chaufa" loading="eager" decoding="async">
+        </div>
+        <div class="spotlight__content">
+          <p class="spotlight__kicker">Recorrido seleccionado</p>
+          <h3 id="dish-title">Arroz Chaufa</h3>
+          <div id="dish-flags" class="dish-flags" aria-label="Influencia culinaria"></div>
+          <p id="dish-summary" class="spotlight__summary"></p>
+
+          <div class="spotlight__facts">
+            <article class="fact-card">
+              <p class="fact-card__label">Historia</p>
+              <p id="dish-story"></p>
+            </article>
+            <article class="fact-card">
+              <p class="fact-card__label">Origen y técnica</p>
+              <p id="dish-origin"></p>
+            </article>
+            <article class="fact-card">
+              <p class="fact-card__label">Cruce cultural</p>
+              <p id="dish-influence"></p>
+            </article>
+            <article class="fact-card">
+              <p class="fact-card__label">Dato curioso</p>
+              <p id="dish-curiosity"></p>
+            </article>
+          </div>
+
+          <div>
+            <p class="spotlight__ingredients-label">Ingredientes tradicionales</p>
+            <ul id="dish-ingredients" class="ingredients"></ul>
           </div>
         </div>
       </div>
+      <a class="spotlight__back" href="#historia">Volver al recorrido</a>
     </section>
 
-    <section class="signature">
-      <div>
-        <p class="eyebrow">Paleta sugerida</p>
-        <h2>Rojo, negro y dorado</h2>
-      </div>
-      <p>
-        El rojo aporta energía y presencia, el negro da contraste elegante y el dorado refuerza la idea de
-        celebración y prestigio culinario. Se añadió un brillo sutil para que la página se vea viva sin perder
-        legibilidad.
-      </p>
-    </section>
-
-    <section id="qrs" class="qr-section">
+    <section id="acceso" class="qr-section">
       <div class="section-heading">
-        <p class="eyebrow">Códigos QR</p>
-        <h2>Un QR por plato</h2>
+        <p class="eyebrow">Acceso rápido</p>
+        <h2>QR por ficha</h2>
       </div>
       <p class="section-intro">
-        Cada tarjeta usa la URL actual del sitio con el ancla del plato. Así puedes imprimir el QR o
-        mostrarlo en la mesa y dirigir al público directamente al detalle correcto.
+        Cada código QR abre la ficha cultural de un plato. El acceso es rápido, pero la narrativa sigue siendo el centro.
       </p>
       <div class="qr-grid" id="qr-grid"></div>
-    </section>
-
-    <section id="menu" class="menu-grid">
-      <article class="menu-card">
-        <img class="menu-card__image" src="./assets/dishes/arroz-chaufa.jpg" alt="Arroz Chaufa" loading="lazy" decoding="async">
-        <span class="menu-card__number">01</span>
-        <h3>Arroz Chaufa</h3>
-        <div class="dish-flags" aria-label="Influencia culinaria">
-          <span class="dish-flag" aria-hidden="true">🇵🇪</span>
-          <span class="dish-flag" aria-hidden="true">🇨🇳</span>
-        </div>
-        <p>Arroz salteado al wok con pollo, huevo, cebolla china y sillao, un clásico de la cocina chifa.</p>
-        <div class="menu-card__footer">
-          <a href="#arroz-chaufa">Ver detalle</a>
-        </div>
-      </article>
-
-      <article class="menu-card">
-        <img class="menu-card__image" src="./assets/dishes/tallarin-saltado.jpg" alt="Tallarín Saltado" loading="lazy" decoding="async">
-        <span class="menu-card__number">02</span>
-        <h3>Tallarín Saltado</h3>
-        <div class="dish-flags" aria-label="Influencia culinaria">
-          <span class="dish-flag" aria-hidden="true">🇵🇪</span>
-          <span class="dish-flag" aria-hidden="true">🇨🇳</span>
-        </div>
-        <p>Tallarines salteados con carne, verduras y salsa oriental con un toque peruano muy sabroso.</p>
-        <div class="menu-card__footer">
-          <a href="#tallarin-saltado">Ver detalle</a>
-        </div>
-      </article>
-
-      <article class="menu-card">
-        <img class="menu-card__image" src="./assets/dishes/lomo-saltado.jpg" alt="Lomo Saltado" loading="lazy" decoding="async">
-        <span class="menu-card__number">03</span>
-        <h3>Lomo Saltado</h3>
-        <div class="dish-flags" aria-label="Influencia culinaria">
-          <span class="dish-flag" aria-hidden="true">🇵🇪</span>
-          <span class="dish-flag" aria-hidden="true">🇨🇳</span>
-        </div>
-        <p>Lomo de res con cebolla, tomate, ají y papas fritas, emblema de la mezcla criolla y china.</p>
-        <div class="menu-card__footer">
-          <a href="#lomo-saltado">Ver detalle</a>
-        </div>
-      </article>
-
-      <article class="menu-card">
-        <img class="menu-card__image" src="./assets/dishes/aeropuerto.jpg" alt="Aeropuerto" loading="lazy" decoding="async">
-        <span class="menu-card__number">04</span>
-        <h3>Aeropuerto</h3>
-        <div class="dish-flags" aria-label="Influencia culinaria">
-          <span class="dish-flag" aria-hidden="true">🇵🇪</span>
-          <span class="dish-flag" aria-hidden="true">🇨🇳</span>
-        </div>
-        <p>Combinación generosa de arroz chaufa, tallarín y carnes, ideal para porciones abundantes.</p>
-        <div class="menu-card__footer">
-          <a href="#aeropuerto">Ver detalle</a>
-        </div>
-      </article>
-
-      <article class="menu-card">
-        <img class="menu-card__image" src="./assets/dishes/wantan.jpg" alt="Wantan" loading="lazy" decoding="async">
-        <span class="menu-card__number">05</span>
-        <h3>Wantan</h3>
-        <div class="dish-flags" aria-label="Influencia culinaria">
-          <span class="dish-flag" aria-hidden="true">🇵🇪</span>
-          <span class="dish-flag" aria-hidden="true">🇨🇳</span>
-        </div>
-        <p>Masitas rellenas fritas o en sopa, con carne sazonada y una textura crujiente o suave.</p>
-        <div class="menu-card__footer">
-          <a href="#wantan">Ver detalle</a>
-        </div>
-      </article>
-
-      <article class="menu-card">
-        <img class="menu-card__image" src="./assets/dishes/kamlu-wantan.jpg" alt="Kamlu Wantan" loading="lazy" decoding="async">
-        <span class="menu-card__number">06</span>
-        <h3>Kamlu Wantan</h3>
-        <div class="dish-flags" aria-label="Influencia culinaria">
-          <span class="dish-flag" aria-hidden="true">🇵🇪</span>
-          <span class="dish-flag" aria-hidden="true">🇨🇳</span>
-        </div>
-        <p>Wantan crocante cubierto con salsa agridulce, verduras y frutas en un plato vistoso y festivo.</p>
-        <div class="menu-card__footer">
-          <a href="#kamlu-wantan">Ver detalle</a>
-        </div>
-      </article>
-
-      <article class="menu-card">
-        <img class="menu-card__image" src="./assets/dishes/pie-de-zapallo-de-carga.jpg" alt="Pie de Zapallo de Carga" loading="lazy" decoding="async">
-        <span class="menu-card__number">07</span>
-        <h3>Pie de Zapallo de Carga</h3>
-        <div class="dish-flags" aria-label="Influencia culinaria">
-          <span class="dish-flag" aria-hidden="true">🇵🇪</span>
-        </div>
-        <p>Pie casero de zapallo de carga con relleno cremoso y masa dorada, ideal como postre de vitrina.</p>
-        <div class="menu-card__footer">
-          <a href="#pie-de-zapallo-de-carga">Ver detalle</a>
-        </div>
-      </article>
-
-      <article class="menu-card">
-        <img class="menu-card__image" src="./assets/dishes/alfajores-de-zapallo.jpg" alt="Alfajores de Zapallo" loading="lazy" decoding="async">
-        <span class="menu-card__number">08</span>
-        <h3>Alfajores de Zapallo</h3>
-        <div class="dish-flags" aria-label="Influencia culinaria">
-          <span class="dish-flag" aria-hidden="true">🇵🇪</span>
-        </div>
-        <p>Alfajores suaves de zapallo con relleno dulce y un acabado delicado de azúcar impalpable.</p>
-        <div class="menu-card__footer">
-          <a href="#alfajores-de-zapallo">Ver detalle</a>
-        </div>
-      </article>
-    </section>
-
-    <section class="tablet-preview">
-      <div class="tablet-preview__copy">
-        <p class="eyebrow">Vista para expositor</p>
-        <h2>La misma página en tablet o pantalla</h2>
-        <p>
-          Si el código QR abre esta URL con un identificador del plato, la vista se enfoca solo en ese contenido.
-          Así el expositor puede cambiar de plato sin salir del sitio.
-        </p>
-      </div>
-      <div class="tablet-screen">
-        <div class="tablet-screen__top"></div>
-      <div class="dish-detail" id="dish-detail">
-        <p class="dish-detail__kicker">Plato destacado</p>
-        <img id="dish-image" class="dish-detail__image" src="./assets/dishes/arroz-chaufa.jpg" alt="Arroz Chaufa" loading="eager" decoding="async">
-        <h2 id="dish-title">Arroz Chaufa</h2>
-        <div id="dish-flags" class="dish-flags" aria-label="Influencia culinaria"></div>
-        <p id="dish-description">
-          Arroz salteado al wok con pollo, huevo, cebolla china y sillao, un clásico de la cocina chifa.
-        </p>
-          <ul id="dish-ingredients" class="ingredients"></ul>
-          <div class="qr-hint">
-            <span>QR</span>
-            <div>
-              <strong>Acceso rápido</strong>
-              <p>La mesa puede mostrar solo el nombre y el enlace codificado en el QR.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="detail-stack" aria-label="Platos">
-      <article class="detail-card dish-section" id="arroz-chaufa" data-title="Arroz Chaufa" data-description="Arroz salteado al wok con pollo, huevo, cebolla china y sillao, un clásico de la cocina chifa." data-ingredients='["Arroz cocido","Pollo","Huevo","Cebolla china","Sillao","Aceite de ajonjolí"]'>
-        <img class="detail-card__image" src="./assets/dishes/arroz-chaufa.jpg" alt="Arroz Chaufa" loading="lazy" decoding="async">
-        <h2>Arroz Chaufa</h2>
-        <div class="dish-flags" aria-label="Influencia culinaria">
-          <span class="dish-flag" aria-hidden="true">🇵🇪</span>
-          <span class="dish-flag" aria-hidden="true">🇨🇳</span>
-        </div>
-        <p>Arroz salteado al wok con pollo, huevo, cebolla china y sillao, un clásico de la cocina chifa.</p>
-      </article>
-
-      <article class="detail-card dish-section" id="tallarin-saltado" data-title="Tallarín Saltado" data-description="Tallarines salteados con carne, verduras y salsa oriental con un toque peruano muy sabroso." data-ingredients='["Tallarines","Carne de res","Cebolla","Tomate","Sillao","Ají amarillo"]'>
-        <img class="detail-card__image" src="./assets/dishes/tallarin-saltado.jpg" alt="Tallarín Saltado" loading="lazy" decoding="async">
-        <h2>Tallarín Saltado</h2>
-        <div class="dish-flags" aria-label="Influencia culinaria">
-          <span class="dish-flag" aria-hidden="true">🇵🇪</span>
-          <span class="dish-flag" aria-hidden="true">🇨🇳</span>
-        </div>
-        <p>Tallarines salteados con carne, verduras y salsa oriental con un toque peruano muy sabroso.</p>
-      </article>
-
-      <article class="detail-card dish-section" id="lomo-saltado" data-title="Lomo Saltado" data-description="Lomo de res con cebolla, tomate, ají y papas fritas, emblema de la mezcla criolla y china." data-ingredients='["Lomo de res","Cebolla","Tomate","Ají amarillo","Papas fritas","Sillao"]'>
-        <img class="detail-card__image" src="./assets/dishes/lomo-saltado.jpg" alt="Lomo Saltado" loading="lazy" decoding="async">
-        <h2>Lomo Saltado</h2>
-        <div class="dish-flags" aria-label="Influencia culinaria">
-          <span class="dish-flag" aria-hidden="true">🇵🇪</span>
-          <span class="dish-flag" aria-hidden="true">🇨🇳</span>
-        </div>
-        <p>Lomo de res con cebolla, tomate, ají y papas fritas, emblema de la mezcla criolla y china.</p>
-      </article>
-
-      <article class="detail-card dish-section" id="aeropuerto" data-title="Aeropuerto" data-description="Combinación generosa de arroz chaufa, tallarín y carnes, ideal para porciones abundantes." data-ingredients='["Arroz chaufa","Tallarín salteado","Pollo","Carne","Huevo","Verduras"]'>
-        <img class="detail-card__image" src="./assets/dishes/aeropuerto.jpg" alt="Aeropuerto" loading="lazy" decoding="async">
-        <h2>Aeropuerto</h2>
-        <div class="dish-flags" aria-label="Influencia culinaria">
-          <span class="dish-flag" aria-hidden="true">🇵🇪</span>
-          <span class="dish-flag" aria-hidden="true">🇨🇳</span>
-        </div>
-        <p>Combinación generosa de arroz chaufa, tallarín y carnes, ideal para porciones abundantes.</p>
-      </article>
-
-      <article class="detail-card dish-section" id="wantan" data-title="Wantan" data-description="Masitas rellenas fritas o en sopa, con carne sazonada y una textura crujiente o suave." data-ingredients='["Masa wantan","Carne molida","Cebolla china","Ajo","Sillao","Caldo o aceite para freír"]'>
-        <img class="detail-card__image" src="./assets/dishes/wantan.jpg" alt="Wantan" loading="lazy" decoding="async">
-        <h2>Wantan</h2>
-        <div class="dish-flags" aria-label="Influencia culinaria">
-          <span class="dish-flag" aria-hidden="true">🇵🇪</span>
-          <span class="dish-flag" aria-hidden="true">🇨🇳</span>
-        </div>
-        <p>Masitas rellenas fritas o en sopa, con carne sazonada y una textura crujiente o suave.</p>
-      </article>
-
-      <article class="detail-card dish-section" id="kamlu-wantan" data-title="Kamlu Wantan" data-description="Wantan crocante cubierto con salsa agridulce, verduras y frutas en un plato vistoso y festivo." data-ingredients='["Wantan frito","Piña","Zanahoria","Pimiento","Salsa agridulce","Verduras mixtas"]'>
-        <img class="detail-card__image" src="./assets/dishes/kamlu-wantan.jpg" alt="Kamlu Wantan" loading="lazy" decoding="async">
-        <h2>Kamlu Wantan</h2>
-        <div class="dish-flags" aria-label="Influencia culinaria">
-          <span class="dish-flag" aria-hidden="true">🇵🇪</span>
-          <span class="dish-flag" aria-hidden="true">🇨🇳</span>
-        </div>
-        <p>Wantan crocante cubierto con salsa agridulce, verduras y frutas en un plato vistoso y festivo.</p>
-      </article>
-
-      <article class="detail-card dish-section" id="pie-de-zapallo-de-carga" data-title="Pie de Zapallo de Carga" data-description="Pie casero de zapallo de carga con relleno cremoso y masa dorada, ideal como postre de vitrina." data-ingredients='["Zapallo de carga","Harina","Mantequilla","Azúcar","Huevos","Canela"]'>
-        <img class="detail-card__image" src="./assets/dishes/pie-de-zapallo-de-carga.jpg" alt="Pie de Zapallo de Carga" loading="lazy" decoding="async">
-        <h2>Pie de Zapallo de Carga</h2>
-        <div class="dish-flags" aria-label="Influencia culinaria">
-          <span class="dish-flag" aria-hidden="true">🇵🇪</span>
-        </div>
-        <p>Pie casero de zapallo de carga con relleno cremoso y masa dorada, ideal como postre de vitrina.</p>
-      </article>
-
-      <article class="detail-card dish-section" id="alfajores-de-zapallo" data-title="Alfajores de Zapallo" data-description="Alfajores suaves de zapallo con relleno dulce y un acabado delicado de azúcar impalpable." data-ingredients='["Zapallo","Harina","Maicena","Dulce de leche","Azúcar impalpable","Canela"]'>
-        <img class="detail-card__image" src="./assets/dishes/alfajores-de-zapallo.jpg" alt="Alfajores de Zapallo" loading="lazy" decoding="async">
-        <h2>Alfajores de Zapallo</h2>
-        <div class="dish-flags" aria-label="Influencia culinaria">
-          <span class="dish-flag" aria-hidden="true">🇵🇪</span>
-        </div>
-        <p>Alfajores suaves de zapallo con relleno dulce y un acabado delicado de azúcar impalpable.</p>
-      </article>
     </section>
   </main>
 
