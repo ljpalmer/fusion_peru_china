@@ -361,6 +361,17 @@ body {
   box-shadow: 0 18px 30px rgba(0, 0, 0, 0.35);
 }
 
+.detail-card__image {
+  width: 100%;
+  aspect-ratio: 1 / 0.74;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+  margin: 0 0 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.3);
+}
+
 .menu-card h3,
 .detail-card h2 {
   margin: 0 0 0.6rem;
