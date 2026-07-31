@@ -3,37 +3,37 @@ const dishes = {
     title: "Arroz Chaufa",
     description: "Arroz salteado al wok con pollo, huevo, cebolla china y sillao, un clásico de la cocina chifa.",
     ingredients: ["Arroz cocido", "Pollo", "Huevo", "Cebolla china", "Sillao", "Aceite de ajonjolí"],
-    image: "./assets/dishes/arroz-chaufa.png",
+    image: "./assets/dishes/arroz-chaufa.jpg",
   },
   "tallarin-saltado": {
     title: "Tallarín Saltado",
     description: "Tallarines salteados con carne, verduras y salsa oriental con un toque peruano muy sabroso.",
     ingredients: ["Tallarines", "Carne de res", "Cebolla", "Tomate", "Sillao", "Ají amarillo"],
-    image: "./assets/dishes/tallarin-saltado.png",
+    image: "./assets/dishes/tallarin-saltado.jpg",
   },
   "lomo-saltado": {
     title: "Lomo Saltado",
     description: "Lomo de res con cebolla, tomate, ají y papas fritas, emblema de la mezcla criolla y china.",
     ingredients: ["Lomo de res", "Cebolla", "Tomate", "Ají amarillo", "Papas fritas", "Sillao"],
-    image: "./assets/dishes/lomo-saltado.png",
+    image: "./assets/dishes/lomo-saltado.jpg",
   },
   aeropuerto: {
     title: "Aeropuerto",
     description: "Combinación generosa de arroz chaufa, tallarín y carnes, ideal para porciones abundantes.",
     ingredients: ["Arroz chaufa", "Tallarín salteado", "Pollo", "Carne", "Huevo", "Verduras"],
-    image: "./assets/dishes/aeropuerto.png",
+    image: "./assets/dishes/aeropuerto.jpg",
   },
   wantan: {
     title: "Wantan",
     description: "Masitas rellenas fritas o en sopa, con carne sazonada y una textura crujiente o suave.",
     ingredients: ["Masa wantan", "Carne molida", "Cebolla china", "Ajo", "Sillao", "Caldo o aceite para freír"],
-    image: "./assets/dishes/wantan.png",
+    image: "./assets/dishes/wantan.jpg",
   },
   "kamlu-wantan": {
     title: "Kamlu Wantan",
     description: "Wantan crocante cubierto con salsa agridulce, verduras y frutas en un plato vistoso y festivo.",
     ingredients: ["Wantan frito", "Piña", "Zanahoria", "Pimiento", "Salsa agridulce", "Verduras mixtas"],
-    image: "./assets/dishes/kamlu-wantan.png",
+    image: "./assets/dishes/kamlu-wantan.jpg",
   },
 };
 
@@ -73,7 +73,7 @@ function renderQrGrid() {
       return `
         <article class="qr-card">
           <div class="qr-card__top">
-            <img src="${qrImageUrl}" alt="QR de ${dish.title}">
+            <img src="${qrImageUrl}" alt="QR de ${dish.title}" loading="lazy" decoding="async">
             <div>
               <h3>${dish.title}</h3>
               <p>${dish.description}</p>
