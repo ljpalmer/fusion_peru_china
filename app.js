@@ -87,6 +87,17 @@ const dishes = {
     flags: ["🇵🇪"],
     image: "./assets/dishes/alfajores-de-zapallo.jpg",
   },
+  "te-chino": {
+    title: "Té Chino",
+    summary: "La infusión que abre y cierra la mesa chifa, servida caliente y sin límite en cada visita.",
+    story: "Llegó junto a los primeros inmigrantes cantoneses como una costumbre de sobremesa ligera y digestiva.",
+    origin: "Se prepara con hojas de té rojo o negro en infusión larga, pensada para acompañar comidas de sabores intensos.",
+    influence: "China aporta la hoja y el ritual; Perú lo convierte en cortesía de casa, servido gratis y de manera constante.",
+    curiosity: "Que la tetera nunca se vacíe es, para muchos comensales peruanos, tan parte del chifa como el propio chaufa.",
+    ingredients: ["Hojas de té rojo", "Agua caliente", "Tetera de barro o metal"],
+    flags: ["🇵🇪", "🇨🇳"],
+    image: "./assets/dishes/te-chino.jpg",
+  },
 };
 
 const siteBaseUrl = "https://fusion-peru-china.vercel.app/";
@@ -155,9 +166,13 @@ function renderQrGrid() {
 
 function route() {
   const hash = window.location.hash.replace(/^#\/?/, "");
-  const slug = dishes[hash] ? hash : "arroz-chaufa";
-  document.body.classList.toggle("focus-mode", Boolean(dishes[hash]));
+  const isDishRoute = Boolean(dishes[hash]);
+  const slug = isDishRoute ? hash : "arroz-chaufa";
+  document.body.classList.toggle("focus-mode", isDishRoute);
   renderDish(slug);
+  if (isDishRoute) {
+    document.getElementById("ficha").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 }
 
 window.addEventListener("hashchange", route);
